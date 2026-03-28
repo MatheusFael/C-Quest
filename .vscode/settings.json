@@ -1,0 +1,4 @@
+{
+  "c-cpp-compile-run.c-linker-flags": "-lgdi32",
+  "c-cpp-compile-run.cpp-linker-flags": "-lgdi32"
+}

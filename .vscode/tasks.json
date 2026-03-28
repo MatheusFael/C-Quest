@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Snake GUI",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-g3",
+        "jogo.c",
+        "-o",
+        "output/jogo_gui.exe",
+        "-lgdi32"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "Run Snake GUI",
+      "type": "shell",
+      "command": "output/jogo_gui.exe",
+      "dependsOn": "Build Snake GUI",
+      "problemMatcher": []
+    }
+  ]
+}
